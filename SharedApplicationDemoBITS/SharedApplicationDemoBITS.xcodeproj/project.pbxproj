@@ -25,6 +25,14 @@
 		84868B1A1A234E2200A1A850 /* sharedApplicationDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84868B191A234E2200A1A850 /* sharedApplicationDisplayViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		84D0ADCB1A24C5E0008FDD08 /* PasteBoardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D0ADCA1A24C5E0008FDD08 /* PasteBoardTableViewController.m */; };
 		84D0ADCE1A24C5F0008FDD08 /* URIScehemTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D0ADCD1A24C5F0008FDD08 /* URIScehemTableViewController.m */; };
+		A6AF30191A24F842006951DE /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AF30131A24F842006951DE /* Icon-72.png */; };
+		A6AF301A1A24F842006951DE /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AF30141A24F842006951DE /* Icon-72@2x.png */; };
+		A6AF301B1A24F842006951DE /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AF30151A24F842006951DE /* Icon-76.png */; };
+		A6AF301C1A24F842006951DE /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AF30161A24F842006951DE /* Icon-76@2x.png */; };
+		A6AF301D1A24F842006951DE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AF30171A24F842006951DE /* Icon.png */; };
+		A6AF301E1A24F842006951DE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AF30181A24F842006951DE /* Icon@2x.png */; };
+		A6AF30201A24F8BE006951DE /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AF301F1A24F8BE006951DE /* Icon-120.png */; };
+		A6AF30221A24F8F7006951DE /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = A6AF30211A24F8F7006951DE /* Icon-152.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +72,14 @@
 		84D0ADCA1A24C5E0008FDD08 /* PasteBoardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasteBoardTableViewController.m; sourceTree = "<group>"; };
 		84D0ADCC1A24C5F0008FDD08 /* URIScehemTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URIScehemTableViewController.h; sourceTree = "<group>"; };
 		84D0ADCD1A24C5F0008FDD08 /* URIScehemTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URIScehemTableViewController.m; sourceTree = "<group>"; };
+		A6AF30131A24F842006951DE /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		A6AF30141A24F842006951DE /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		A6AF30151A24F842006951DE /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		A6AF30161A24F842006951DE /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76@2x.png"; sourceTree = "<group>"; };
+		A6AF30171A24F842006951DE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		A6AF30181A24F842006951DE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		A6AF301F1A24F8BE006951DE /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		A6AF30211A24F8F7006951DE /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +109,7 @@
 		84868AD41A234DF500A1A850 = {
 			isa = PBXGroup;
 			children = (
+				A6AF30121A24F842006951DE /* App_Icon */,
 				84868AE61A234DF500A1A850 /* SharedApplicationDemoBITS */,
 				84868B081A234DF600A1A850 /* SharedApplicationDemoBITSTests */,
 				84868ADF1A234DF500A1A850 /* Frameworks */,
@@ -168,6 +185,22 @@
 				84868B0B1A234DF600A1A850 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A6AF30121A24F842006951DE /* App_Icon */ = {
+			isa = PBXGroup;
+			children = (
+				A6AF30211A24F8F7006951DE /* Icon-152.png */,
+				A6AF301F1A24F8BE006951DE /* Icon-120.png */,
+				A6AF30131A24F842006951DE /* Icon-72.png */,
+				A6AF30141A24F842006951DE /* Icon-72@2x.png */,
+				A6AF30151A24F842006951DE /* Icon-76.png */,
+				A6AF30161A24F842006951DE /* Icon-76@2x.png */,
+				A6AF30171A24F842006951DE /* Icon.png */,
+				A6AF30181A24F842006951DE /* Icon@2x.png */,
+			);
+			name = App_Icon;
+			path = SharedApplicationDemoBITS/App_Icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,10 +279,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6AF301D1A24F842006951DE /* Icon.png in Resources */,
+				A6AF30221A24F8F7006951DE /* Icon-152.png in Resources */,
+				A6AF30201A24F8BE006951DE /* Icon-120.png in Resources */,
 				84868AF71A234DF600A1A850 /* Main_iPad.storyboard in Resources */,
+				A6AF30191A24F842006951DE /* Icon-72.png in Resources */,
+				A6AF301A1A24F842006951DE /* Icon-72@2x.png in Resources */,
+				A6AF301B1A24F842006951DE /* Icon-76.png in Resources */,
 				84868AFC1A234DF600A1A850 /* Images.xcassets in Resources */,
 				84868AF41A234DF600A1A850 /* Main_iPhone.storyboard in Resources */,
+				A6AF301C1A24F842006951DE /* Icon-76@2x.png in Resources */,
 				84868AEB1A234DF500A1A850 /* InfoPlist.strings in Resources */,
+				A6AF301E1A24F842006951DE /* Icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,12 +447,13 @@
 		84868B131A234DF600A1A850 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SharedApplicationDemoBITS/SharedApplicationDemoBITS-Prefix.pch";
 				INFOPLIST_FILE = "SharedApplicationDemoBITS/SharedApplicationDemoBITS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -419,12 +461,13 @@
 		84868B141A234DF600A1A850 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SharedApplicationDemoBITS/SharedApplicationDemoBITS-Prefix.pch";
 				INFOPLIST_FILE = "SharedApplicationDemoBITS/SharedApplicationDemoBITS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
