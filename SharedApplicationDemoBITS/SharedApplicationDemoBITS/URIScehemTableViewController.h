@@ -11,6 +11,4 @@
 @interface URIScehemTableViewController : UITableViewController
 @property (nonatomic,strong) NSDictionary *dataDict;
 
--(void)readDataByURIScheme:(NSURL*)url;
-
 @end

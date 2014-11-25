@@ -25,9 +25,25 @@
 }
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     
+    NSLog(@"url absoluteString: %@", [url absoluteString]);
+    NSLog(@"url relativeString: %@", [url relativeString]);
+    /*NSLog(@"url baseURL: %@", [url baseURL]);*/
+    NSLog(@"url absoluteURL: %@", [url absoluteURL]);
     
-    URIScehemTableViewController *uriObject = [[URIScehemTableViewController alloc]init];
-    [uriObject readDataByURIScheme:url];
+    NSString *text = [[url absoluteString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    NSLog(@"text = %@ ",text);
+    
+    NSString *newText = [text stringByReplacingOccurrencesOfString:@"sharedapp://" withString:@""];
+    
+    NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:[newText dataUsingEncoding:NSUTF8StringEncoding]
+                                                               options:0 error:NULL];
+    NSLog(@"jsonObject=%@", jsonObject);
+    
+    self.uriSchemePiggyBackData = jsonObject;
+    
+//    URIScehemTableViewController *uriObject = [[URIScehemTableViewController alloc]init];
+//    [uriObject readDataByURIScheme:url];
     
     return YES;
 }

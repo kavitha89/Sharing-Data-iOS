@@ -7,6 +7,7 @@
 //
 
 #import "URIScehemTableViewController.h"
+#import "AppDelegate.h"
 
 @interface URIScehemTableViewController ()
 
@@ -31,6 +32,9 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
+   self.dataDict = appDelegate.uriSchemePiggyBackData;
 }
 - (void)didReceiveMemoryWarning
 {
@@ -64,27 +68,6 @@
 }
 
 
--(void)readDataByURIScheme:(NSURL*)url
-{
-    NSLog(@"url absoluteString: %@", [url absoluteString]);
-    NSLog(@"url relativeString: %@", [url relativeString]);
-    /*NSLog(@"url baseURL: %@", [url baseURL]);*/
-    NSLog(@"url absoluteURL: %@", [url absoluteURL]);
-    
-    NSString *text = [[url absoluteString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    
-    NSLog(@"text = %@ ",text);
-    
-    NSString *newText = [text stringByReplacingOccurrencesOfString:@"sharedapp://" withString:@""];
-    
-    NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:[newText dataUsingEncoding:NSUTF8StringEncoding]
-                                                               options:0 error:NULL];
-    NSLog(@"jsonObject=%@", jsonObject);
-    
-    self.dataDict = jsonObject;
-
-
-}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
