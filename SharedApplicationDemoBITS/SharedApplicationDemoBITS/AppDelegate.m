@@ -23,11 +23,16 @@
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
+
+/**
+ 
+ Method to handle URI Scheme from other application.
+ 
+ **/
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
     
     NSLog(@"url absoluteString: %@", [url absoluteString]);
     NSLog(@"url relativeString: %@", [url relativeString]);
-    /*NSLog(@"url baseURL: %@", [url baseURL]);*/
     NSLog(@"url absoluteURL: %@", [url absoluteURL]);
     
     NSString *text = [[url absoluteString] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
@@ -41,10 +46,7 @@
     NSLog(@"jsonObject=%@", jsonObject);
     
     self.uriSchemePiggyBackData = jsonObject;
-    
-//    URIScehemTableViewController *uriObject = [[URIScehemTableViewController alloc]init];
-//    [uriObject readDataByURIScheme:url];
-    
+        
     return YES;
 }
 

@@ -11,11 +11,6 @@
 #import "URIScehemTableViewController.h"
 #import "AppDelegate.h"
 
-#define IDENTIFIER  @"SharedApplication"
-#define iMIMApplicationInfo     @"MIMApplicationInfo"
-#define iPlist                  @"plist"
-#define iTeamIdkey              @"Team_ID"
-
 @interface sharedApplicationDisplayViewController ()
 
 @property (nonatomic,strong) NSDictionary *dataDictionary;
@@ -108,16 +103,7 @@
 		}
     }
 }
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 
 @end

@@ -39,6 +39,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/** 
+ 
+ Reads data from UIPasteBoard stored from application one.
+ 
+ **/
 -(void)readDataFromPasteBoard
 {
     UIPasteboard * pasteboard=[UIPasteboard generalPasteboard];
@@ -50,9 +56,6 @@
     NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:[text dataUsingEncoding:NSUTF8StringEncoding]
                                                                options:0 error:NULL];
     NSLog(@"jsonObject=%@", jsonObject);
-    
-    /*NSString *tableData = [jsonObject valueForKey:@"bCapacity"];
-    NSLog(@"tableData=%@", tableData);*/
     
     self.dataDict = jsonObject;
     
