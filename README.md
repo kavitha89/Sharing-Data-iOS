@@ -1,4 +1,4 @@
-# SharedApplication_BITSDemo
+# Sharing-Data-iOS
 
 The base line is to achieve Inter App Communication.In ios two basic concept transfer data via 
 1. URIScheme
